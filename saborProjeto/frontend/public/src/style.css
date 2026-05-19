@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 216, 118);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+nav img {
+    width: 140px;
+    height: 120px;
+    border-radius: 50px;
+}
+
+.Buscar {
+    display: flex;
+    gap: 10px;
+}
+
+.busca {
+    outline: none;
+    border: none;
+    padding: 8px;
+}
+
+.btnBuscar {
+    padding: 8px 12px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+    border-radius: 20px;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel-buttons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-buttons button {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+.container h2 {
+    color: white;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.principal,
+.secundario {
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.secundario {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover .secundario {
+    opacity: 1;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card h5, .card p {
+    color: red;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+}

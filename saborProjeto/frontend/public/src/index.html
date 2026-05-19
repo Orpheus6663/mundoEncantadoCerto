@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Encantado</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <img src="./assets/logoMundoEncantado.png" alt="logo">
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menina</a></li>
+        <li><a href="#">Meninos</a></li>
+        <li><a href="#">Pelúcias</a></li>
+        <li><a href="#">Bebês</a></li>
+        <li><a href="#">Contatos</a></li>
+    </ul>
+
+    <div class="Buscar">
+        <input type="text" id="busca" placeholder="Buscar...">
+        <button id="btnBuscar">Buscar</button>
+    </div>
+</nav>
+
+<div class="carousel" id="carousel">
+    <img src="./assets/wallpaper.jpg" class="active">
+    <img src="./assets/cardCarrosel.jpg">
+    <img src="./assets/cardCarrosel2.avif">
+
+    <div class="carousel-buttons">
+        <button onclick="prevSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+    </div>
+</div>
+
+<section class="container">
+    <h2>Nossos Produtos</h2>
+
+    <div class="produtos">
+
+        <div class="card">
+            <img class="principal" src="./assets/miniBrands.webp">
+            <img class="secundario" src="./assets/miniBrandsBrinquedos.webp">
+            <div class="card-body">
+                <h5>Mini Brands</h5>
+                <p>Mini Brands com comidinhas surpresas</p>
+                <p class="price">R$ 99,99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="principal" src="./assets/geladeira.webp">
+            <img class="secundario" src="./assets/geladeiraMini.webp">
+            <div class="card-body">
+                <h5>PRÉ-VENDA: Geladeira - Mini Brands</h5>
+                <p>Geladeira para guardar Mini Brands</p>
+                <p class="price">R$ 349,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="midias/pomni.webp">
+            <div class="card-body">
+                <h5>Pelúcia pomni</h5>
+                <p>Pelucia normal</p>
+                <p class="price">R$ 199,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
